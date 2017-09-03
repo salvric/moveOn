@@ -4,9 +4,13 @@ $red: #DD2C00;
 $green: #64DD17;
 $pink: #F4CAD3;
 $red: #EF5350;
+* {
+    margin: 0;
+}
+
 .main {
-    width: 80%;
-    height: 600px;
+    width: 100%;
+    height: 100vh;
     background-color: $pink;
     margin: 0 auto;
 }
@@ -27,6 +31,24 @@ $red: #EF5350;
     width: 50%;
     height: 100%;
     background-color: $pink;
+}
+
+.navigation {
+    position: absolute;
+    top: 50%;
+    right: 1%;
+    width: 4%;
+    margin: 10px;
+    background: $main;
+    opacity: 0.5;
+    height: 1px;
+    border: 1px solid $main;
+    z-index: 2;
+    cursor: pointer;
+    transition: width 1s ease;
+    &:hover {
+        width: 6%;
+    }
 }
 
 #shape {
